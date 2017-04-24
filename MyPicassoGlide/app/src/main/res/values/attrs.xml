@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--单圆角图片-->
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="roundImageView_hasRound" format="boolean" />
+        <attr name="roundImageView_roundColor" format="color" />
+        <attr name="leftTop_angle" format="boolean" />
+        <attr name="leftBottom_angle" format="boolean" />
+        <attr name="rightTop_angle" format="boolean" />
+        <attr name="rightBottom_angle" format="boolean" />
+        <attr name="corner_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="WaveView">
+        <attr name="above_wave_color" format="color" />
+        <attr name="blow_wave_color" format="color" />
+        <attr name="progress" format="integer" />
+        <attr name="wave_length" format="enum">
+            <enum name="large" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="little" value="3" />
+        </attr>
+        <attr name="wave_height" format="enum">
+            <enum name="large" value="1" />
+            <enum name="middle" value="2" />
+            <enum name="little" value="3" />
+        </attr>
+        <attr name="wave_hz" format="enum">
+            <enum name="fast" value="1" />
+            <enum name="normal" value="2" />
+            <enum name="slow" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="Themes">
+        <attr name="waveViewStyle" format="reference" />
+    </declare-styleable>
+
+    <!--登录用到-->
+    <declare-styleable name="Dialog">
+        <attr name="DialogTitleAppearance" format="reference" />
+        <attr name="DialogTitleText" format="reference|string" />
+        <attr name="DialogSpotColor" format="reference|color" />
+        <attr name="DialogSpotCount" format="integer" />
+    </declare-styleable>
+
+    <!-- 小莱社区使用 PagerSlidingTab -->
+    <declare-styleable name="PagerSlidingTab">
+        <attr name="indicatorColor" format="color" />
+        <attr name="underlineColor" format="color" />
+        <attr name="dividerColor" format="color" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="underlineHeight" format="dimension" />
+        <attr name="pst_dividerPadding" format="dimension" />
+        <attr name="tabPaddingLeftRight" format="dimension" />
+        <attr name="scrollOffset" format="dimension" />
+        <attr name="tabBackground" format="reference" />
+        <attr name="shouldExpand" format="boolean" />
+        <attr name="pst_textAllCaps" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioView">
+        <attr name="aspectRatio" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="AspectRatioLayout">
+        <attr name="laspectRatio" format="string" />
+    </declare-styleable>
+
+    <!--星星控件属性-->
+    <declare-styleable name="StarBarView">
+        <!--设置星星间的间隔-->
+        <attr name="space_width" format="dimension" />
+        <!--星星间宽度-->
+        <attr name="star_width" format="dimension" />
+        <!--星星间高度-->
+        <attr name="star_height" format="dimension" />
+        <!--最大数量-->
+        <attr name="star_max" format="integer" />
+        <!--选中数量-->
+        <attr name="star_rating" format="float" />
+        <!--未选中图片-->
+        <attr name="star_hollow" format="reference" />
+        <!--选中图片-->
+        <attr name="star_solid" format="reference" />
+        <!--是否可以滑动改变选中数量-->
+        <attr name="star_isIndicator" format="boolean" />
+        <!--排列方向-->
+        <attr name="star_orientation" format="enum">
+            <enum name="vertical" value="1" />
+            <enum name="horizontal" value="0" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="MySeekBar">
+    <!-- SeekBar 最小值-->
+    <attr name="min" format="integer"/>
+    <!-- SeekBar 2点间代表的数值-->
+    <attr name="per_value" format="integer"/>
+    <!-- SeekBar供有多少个点-->
+    <attr name="point_count" format="integer"/>
+    <!-- 背景线颜色-->
+    <attr name="back_line_color" format="color"/>
+    <!-- 区间线颜色-->
+    <attr name="indicator_line_color" format="color"/>
+    <!-- 滑动指示器颜色-->
+    <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+
+
+
+    <!-- CircleImageView -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <!--健康数据 自定义测量尺子-->
+    <declare-styleable name="RulerView">
+        <!--最大刻度的颜色-->
+        <attr name="mMaxScaleColor" format="color"/>
+        <!--中间刻度的颜色-->
+        <attr name="mMidScaleColor" format="color"/>
+        <!--最小刻度的颜色-->
+        <attr name="mMinScaleColor" format="color"/>
+        <!--底线的颜色-->
+        <attr name="mBottomLineColor" format="color"/>
+        <!--最大刻度的宽度-->
+        <attr name="mMaxScaleWidth" format="dimension"/>
+        <!--中间刻度的宽度-->
+        <attr name="mMidScaleWidth" format="dimension"/>
+        <!--最小刻度的宽度-->
+        <attr name="mMinScaleWidth" format="dimension"/>
+        <!--底线的宽度-->
+        <attr name="mBottomLineWidth" format="dimension"/>
+        <!--最大刻度的高度占控件的高度比例-->
+        <attr name="mMaxScaleHeightRatio" format="float"/>
+        <!--中间刻度的高度占控件的高度比例-->
+        <attr name="mMidScaleHeightRatio" format="float"/>
+        <!--最小刻度的高度占控件的高度比例-->
+        <attr name="mMinScaleHeightRatio" format="float"/>
+        <!--是否显示刻度值-->
+        <attr name="isShowScaleValue" format="boolean"/>
+        <!--是否刻度渐变 包括刻度值和刻度线及下面的线-->
+        <attr name="isScaleGradient" format="boolean"/>
+        <!--刻度值颜色-->
+        <attr name="mScaleValueColor" format="color"/>
+        <!--刻度值文字大小-->
+        <attr name="mScaleValueSize" format="dimension"/>
+        <!--刻度值间隔-->
+        <attr name="mScaleSpace" format="dimension"/>
+        <!-- 当前值-->
+        <attr name="mCurrentValue" format="integer"/>
+        <!--最大值-->
+        <attr name="mMaxValue" format="integer"/>
+        <!--最小值-->
+        <attr name="mMinValue" format="integer"/>
+        <!--刻度基数-->
+        <attr name="mScaleBase" format="integer"/>
+        <!--中间图标-->
+        <attr name="mMiddleImg" format="reference"/>
+    </declare-styleable>
+
+    <!-- ExpandableTextView -->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+        <attr name="contentTextColor" format="color" />
+        <attr name="collapseExpandTextColor" format="color" />
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="collapseExpandTextSize" format="dimension" />
+        <attr name="textCollapse" format="string" />
+        <attr name="textExpand" format="string" />
+        <attr name="collapseExpandGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+        <attr name="drawableGrarity" >
+            <flag name="left" value="3"/>
+            <flag name="right" value="5"/>
+        </attr>
+    </declare-styleable>
+
+</resources>
